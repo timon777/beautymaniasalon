@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Beauty Mania</title>
+
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header element-animation">
+        <div class="container">
+          <div class="header__items">
+            <div class="header__start">
+              <a href="/" class="header__logo">
+                <img src="images/logo.svg" alt="" />
+              </a>
+              <div class="header__name">Салон красоты в Одинцово</div>
+            </div>
+            <div class="header__item">
+              <ul class="header__nav">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#service">Услуги</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#price">Прайс-лист</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+              <a href="tel:+7 (800) 551-06-77" class="header__tel">
+                <img src="images/tel.svg" alt="" />+7 (800) 551-06-77
+              </a>
+            </div>
+            <div class="header__burger">
+              <a href="#"><span></span></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="error">
+        <div class="container">
+          <div class="error__image">
+            <img src="images/404.svg" alt="" />
+          </div>
+          <div class="error__text">Увы такой страницы не существует</div>
+          <a href="/" class="error__btn">На главную</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__items">
+            <div class="footer__start">
+              <a href="/" class="footer__logo">
+                <img src="images/logo-footer.svg" alt="" />
+              </a>
+              <div class="footer__info">
+                Салон красоты Beauty Mania постоянно развивается и предлагает своим клиентам новейшие разработки в
+                области косметологии, ногтевого сервиса и парикмахерского искусства.
+              </div>
+            </div>
+            <div class="footer__list">
+              <div class="footer__head">Информация</div>
+              <ul class="footer__nav">
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#service">Услуги</a></li>
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#stock">Акции</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <div class="footer__head">Услуги</div>
+              <ul class="footer__nav">
+                <li><a href="#service">Иъекционная косметология</a></li>
+                <li><a href="#service">Аппаратная косметология</a></li>
+                <li><a href="#service">Косметология по телу</a></li>
+                <li><a href="#service">Парикмахерский зал</a></li>
+                <li><a href="#service">Ногтевой сервис</a></li>
+              </ul>
+            </div>
+            <div class="footer__list">
+              <div class="footer__head">Информация</div>
+              <ul class="footer__nav">
+                <li><a href="#">Мед. лицензия</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="footer-end">
+        <div class="container">Разработка сайта maxico.kz © 2022</div>
+      </section>
+    </div>
+
+    <a class="top_button" href="#" style="display: none"
+      ><span><img src="images/arrow-up-solid.svg" alt="" /></span
+    ></a>
+
+    <div id="modal-stock" class="modal-stock" style="display: none">
+      <div class="modal-stock__content">
+        <img src="images/stock.png" alt="" />
+      </div>
+    </div>
+
+    <div id="modal-form" class="modal-form" style="display: none">
+      <div class="modal-form__content">
+        <div class="modal-form__title">Оставить заявку</div>
+        <div class="modal-form__head">Мы вам перезвоним</div>
+        <form action="#" class="modal-form__form">
+          <input type="text" placeholder="Ваше имя" />
+          <input type="text" placeholder="Ваш телефон" />
+          <div class="modal-form__end">
+            <button class="modal-form__btn">Записаться</button>
+            <div class="modal-form__text">Нажима кнопку “записаться”вы соглашаетесь с политикой конфиденциальности</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script type="text/javascript">
+      ymaps.ready(init)
+      function init() {
+        if (document.documentElement.clientWidth >= 600) {
+          var myMap = new ymaps.Map(
+            'map-atiray',
+            {
+              center: [55.682422, 37.265792],
+              zoom: 17,
+              controls: [],
+            },
+            {
+              searchControlProvider: 'yandex#search',
+            }
+          )
+          var zoomControl = new ymaps.control.ZoomControl({
+            options: {
+              position: {
+                right: '14px',
+                top: '215px',
+              },
+            },
+          })
+          myMap.controls.add(zoomControl)
+          myMap.behaviors.disable('scrollZoom')
+        }
+        if (document.documentElement.clientWidth < 767) {
+          var myMap = new ymaps.Map(
+            'map-atiray',
+            {
+              center: [55.682422, 37.268999],
+              zoom: 17,
+              controls: [],
+            },
+            {
+              searchControlProvider: 'yandex#search',
+            }
+          )
+          var zoomControl = new ymaps.control.ZoomControl({
+            options: {
+              position: {
+                right: '14px',
+                top: '45px',
+              },
+            },
+          })
+          myMap.controls.add(zoomControl)
+          myMap.behaviors.disable('scrollZoom')
+        }
+        talanCollection = new ymaps.GeoObjectCollection(null, {
+          preset: 'islands#yellowIcon',
+          iconLayout: 'default#image',
+          iconImageHref: 'images/marker.svg',
+          iconImageSize: [125, 52],
+        })
+        talanCollection.add(
+          new ymaps.Placemark([55.682422, 37.268792], {
+            hintContent: 'Beauty Mania',
+          })
+        )
+        myMap.geoObjects.add(talanCollection)
+      }
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
