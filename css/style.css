@@ -2677,9 +2677,9 @@ ul {
 }
 
 .work .slick-dots li button {
-  border: 1px solid #dddddd;
-  width: 14px;
-  height: 14px;
+  border: 1px solid #d30000;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 0;
@@ -2714,9 +2714,9 @@ ul {
   border: 0;
   width: 10px;
   background: none;
-  height: 20px;
+  height: 40px;
   background-repeat: no-repeat;
-  background-size: 10px;
+  background-size: 20px;
   background-position: center;
   font-size: 0;
   border: 0;
