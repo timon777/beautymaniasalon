@@ -27,6 +27,7 @@ $(document).ready(function () {
     arrows: false,
     loop: false,
     infinite: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 1260,
