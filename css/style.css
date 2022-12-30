@@ -1620,9 +1620,9 @@ ul {
 }
 
 .team .slick-dots li button {
-  border: 1px solid #dddddd;
-  width: 20px;
-  height: 20px;
+  border: 1px solid #d30000;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   border-radius: 50%;
   font-size: 0;
