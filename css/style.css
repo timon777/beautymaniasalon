@@ -1286,7 +1286,7 @@ ul {
 
 .price__body-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
   -moz-column-gap: 99px;
   column-gap: 99px;
   row-gap: 14px;
@@ -1317,6 +1317,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px dotted black;
 }
 
 .price__body-number {
