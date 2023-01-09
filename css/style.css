@@ -2301,6 +2301,7 @@ ul {
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 500;
+  margin-left: 3px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2312,6 +2313,7 @@ ul {
 .contacts__tels-block {
   display: flex;
   align-items: center;
+  margin-left: -5px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2358,12 +2360,15 @@ ul {
 @media only screen and (max-width: 767px) {
   .contacts__block {
     justify-content: center;
+    align-items: flex-start;
+
   }
 }
 
 .contacts__block img {
   margin-right: 12px;
   min-width: 23px;
+   margin-right: 15px;
 }
 
 .contacts__social {
@@ -2651,7 +2656,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .work__image {
-    height: 220px;
+    height: 375px;
   }
 }
 
@@ -2670,7 +2675,7 @@ ul {
   font-weight: 700;
   color: #fff;
   position: absolute;
-  bottom: 28px;
+  bottom: 20px;
   left: 28px;
   z-index: 15;
 }
