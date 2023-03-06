@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="format-detection" content="telephone=no" />
     <title>Beauty Mania</title>
@@ -1609,11 +1609,12 @@
                 Оставьте заявку <br />
                 мы вам перезвоним!
               </div>
-              <form action="#" class="form__form">
+              <form action="/send.php" class="form__form" >
                 <div class="form__inputs">
-                  <input type="text" placeholder="Ваше имя" />
-                  <input type="text" placeholder="Ваш телефон" />
+                  <input type="text" placeholder="Ваше имя" name="name"/>
+                  <input type="text" placeholder="Ваш телефон" name="phone" />
                 </div>
+          <input type="hidden" name="act" value="order">
                 <button>Оставить</button>
               </form>
             </div>
@@ -2366,7 +2367,7 @@
       </footer>
 
       <section class="footer-end">
-        <div class="container">Разработка сайта maxico.kz © 2022</div>
+        <div class="container"><a href="https://itmaxico.com">Разработка сайта maxico.kz</a> © 2022</div>
       </section>
     </div>
 
@@ -2384,9 +2385,10 @@
       <div class="modal-form__content">
         <div class="modal-form__title">Оставить заявку</div>
         <div class="modal-form__head">Мы вам перезвоним</div>
-        <form action="#" class="modal-form__form">
-          <input type="text" placeholder="Ваше имя" />
-          <input type="text" placeholder="Ваш телефон" />
+        <form action="/send.php" class="modal-form__form">
+          <input type="text" placeholder="Ваше имя" name="name"/>
+          <input type="text" placeholder="Ваш телефон" name="phone"/>
+      <input type="hidden" name="act" value="order">
           <div class="modal-form__end">
             <button class="modal-form__btn">Записаться</button>
             <div class="modal-form__text">Нажима кнопку “записаться”вы соглашаетесь с политикой конфиденциальности</div>
@@ -2463,5 +2465,22 @@
       }
     </script>
     <script src="js/main.js?V1"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(92708865, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/92708865" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
   </body>
 </html>
